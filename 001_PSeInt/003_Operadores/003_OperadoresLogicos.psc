@@ -16,4 +16,9 @@ Algoritmo OperadoresLogicos
 	Imprimir "Expresion a evaluar (O): ", a, " Y ", b
 	Imprimir "Resultado Operador O (OR): ", c
 	
+	// Operador Logico  NO (NOT, !)
+	c = NO a
+	Imprimir "Expresion a evaluar (NO): ", a
+	Imprimir "Resultado Operador NO (NOT,!): ", c
+	
 FinAlgoritmo
