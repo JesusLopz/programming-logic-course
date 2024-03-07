@@ -12,7 +12,8 @@ Algoritmo OpcionesMenu
 	Leer entrada_numero;
 	
 	// Se hace la logica para seleccionar menu
-	expresion_logica = entrada_numero >= 1 Y entrada_numero <= 3;
+	//expresion_logica = entrada_numero >= 1 Y entrada_numero <= 3; //Mi solución
+	expresion_logica = entrada_numero == 1 O entrada_numero == 2 O entrada_numero == 3; // Solución profesor
 	
 	// Se imprime mensaje de resultado
 	Imprimir "La seleccion ", entrada_numero, " es una opción valida?: ", expresion_logica;
