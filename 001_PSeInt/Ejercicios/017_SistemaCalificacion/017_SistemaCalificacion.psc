@@ -1,6 +1,6 @@
 Algoritmo SistemaCalificacion
 	// Declarar variables
-	Definir calificacion Como Entero;
+	Definir calificacion Como Real;
 	Definir mensaje Como Cadena;
 	
 	// Preguntar al usuario
