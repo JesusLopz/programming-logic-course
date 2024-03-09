@@ -7,7 +7,7 @@ Algoritmo SistemaCalificacion
 	Imprimir "Proporcione calificacion entre 0 y 10:";
 	Leer calificacion;
 	
-	// Resolver
+	// Revisamos la calificacion segun el sistema de calificaciones
 	Si calificacion >= 9 Y calificacion <= 10 Entonces;
 		mensaje = "A";
 	SiNo
