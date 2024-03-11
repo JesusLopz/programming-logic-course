@@ -9,8 +9,9 @@ Algoritmo NumeroPositivoDosDigitos
 	Repetir
 		Imprimir "Proporcione un numero de dos digitos:"
 		Leer numero_entrante;
-		Imprimir "La condicion a evaluar: ", numero_entrante, " >= ", limite_inferior, " Y ", numero_entrante, " <= ", limite_superior;
-	Hasta Que numero_entrante >= limite_inferior Y numero_entrante <= limite_superior;
+		condicion = numero_entrante >= limite_inferior Y numero_entrante <= limite_superior;
+		Imprimir "La condicion a evaluar: ", numero_entrante, " >= ", limite_inferior, " Y ", numero_entrante, " <= ", limite_superior, " = ", condicion;
+	Hasta Que condicion;
 	
 	Imprimir "Numero de dos digitos proporcionado es: ", numero_entrante;
 	
