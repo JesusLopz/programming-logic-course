@@ -18,5 +18,5 @@ Algoritmo FactorialNumeroCicloMientras
 		numero_var = numero_var + 1;
 	FinMientras
 	
-	Imprimir  factorial_resultado
+	Imprimir  "El factorial de ", factorial, "! es = ", factorial_resultado
 FinAlgoritmo
