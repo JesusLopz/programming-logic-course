@@ -1,21 +1,30 @@
 Algoritmo SerieFibonacciArreglo
+	// Serie de fibonacci con arreglos
 	
-	Definir numero_elementos, valor_1, valor_2, tope_fibonacci, valor_fib Como Entero
 	
-	Imprimir "Cuantos numeros de la serie fibonacci deseas?"
-	Leer numero_elementos
+	Definir tamanio_arreglo, arreglo Como Entero
 	
-	Dimension tope_fibonacci[numero_elementos]
+	Repetir
+		Imprimir "Cuantos numeros de la serie fibonacci deseas: "
+		Leer tamanio_arreglo
+	Hasta Que tamanio_arreglo > 0
 	
-	valor_1 = 0;
-	valor_2 = 1;
-	valor_fib = 0
 	
-	Para i = 0 Hasta numero_elementos  Hacer
-		valor_fib = valor_1 + valor_2
-		Imprimir valor_fib
-		valor_1 = valor_2
-		valor_2 = valor_fib
+	Dimension arreglo[tamanio_arreglo]
+	
+	// Los primeros valores de la serie fibonacci son 1 y 1
+	arreglo[0] = 1
+	arreglo[1] = 1
+	
+	// Los siguietes valores se calculan con el algoritmo
+	Para i = 2 Hasta tamanio_arreglo -1 Hacer
+		//Nuevo valor, es la suma de los dos valores anteriores
+		arreglo[i] = arreglo[i - 2] + arreglo[i - 1]
+	FinPara
+	
+	// Imprimimos los valores
+	Para i = 0 Hasta tamanio_arreglo - 1 Hacer
+		Imprimir i + 1, ". Valor de la serie [", i, "] es = ", arreglo[i]
 	FinPara
 	
 FinAlgoritmo
